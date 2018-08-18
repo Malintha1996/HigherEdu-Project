@@ -1,0 +1,23 @@
+{
+  "name": "higheredu-project",
+  "version": "1.0.0",
+  "description": "Higher educational institution advertising site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malintha1996/HigherEdu-Project.git"
+  },
+  "author": "Malintha1996,TharinduKW96",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Malintha1996/HigherEdu-Project/issues"
+  },
+  "homepage": "https://github.com/Malintha1996/HigherEdu-Project#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
