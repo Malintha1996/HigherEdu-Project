@@ -1,14 +1,43 @@
-<!DOCTYPE html>
-<html>
-<head>
 
-</head>
-<nav>
-  <ul>
-   <li href="#">Home</li>
-   <li href="#">Contacts</li>
+<!-- navigation bar !-->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" style="margin-bottom:3vh;">
+  <a class="navbar-brand" href="#">HighEdu</a>
 
-  </ul>
+  <!--toggle button!-->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!--nav menu!-->
+  <div class="collapse navbar-collapse"  id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item"  >
 
+        <a class="nav-link" href="#"><img src="assets/Home.svg" style="width:2vw;" alt="home icon">Home</a>
 
+      </li>
+      <li class="nav-item" >
+
+        <a class="nav-link"  href="#"><img src="assets/courses.svg" style="width:2vw;" alt="home icon"> Courses</a>
+
+      </li>
+      <li class="nav-item" >
+
+        <a class="nav-link"  href="#"><img src="assets/phone-book.svg" style="width:2vw;" alt="contact icon">Contact</a>
+
+      </li>
+      <li class="nav-item" >
+
+        <a class="nav-link"  href="#"><img src="assets/about-us.svg" style="width:2vw;" alt="home icon"> About-us</a>
+
+      </li>
+    </ul>
+    <ul  class="navbar-nav" style="margin-left:40vw;">
+      <li class="nav-item" >
+        <form class="form-inline" action="/action_page.php">
+         <input class="form-control mr-sm-2" type="text" placeholder="Search">
+         <button class="btn btn-success" type="submit">Search<img src="assets/magnifier-tool.svg" alt="search icon" style="width:3vw;padding-left:1vw;"></button>
+       </form>
+      </li>
+    </ul>
+  </div>
 </nav>

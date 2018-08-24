@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+   <link   rel="stylesheet" href="assets/courses.css" >
+  <style>
+   /* Make the image fully responsive */
+   .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    }
+    .course-item:hover{
+      background-color:yellow;
+    }
+  </style>
+
+</head>
+<title>Institute Account</title>
+<body>
+  <% include partials/navpannel.ejs %>
+  <div class="row" style="margin-top:14vh;margin-bottom:10vh;">
+
+ <!-- institute image !-->
+ <div class="col-md-5" style="margin-left:4vw;margin-right:4vw;">
+    <div class="card" style="">
+        <img class="card-img-top" src="assets/sakya-crowd.jpg" alt="card image">
+        <div class="card-body">
+          <img style="width:10%;margin-right:3vw;float:left;" src="assets/university-solid.svg">
+          <h4 class="card-title" style="float:left;font-size:4vh;">Sakya Higher Educational Institute</h4>
+        </div>
+    </div>
+  </div>
+  <!-- search box!-->
+  <div class="col-md-5 " style="margin-left:5vw;margin-right:2vw;height:60vh;">
+    <% include partials/newsbox.ejs  %>
+ </div>
+</div>
+ <div class="row">
+   <div class="col-md-7" style="margin-left:3%">
+    <div class="card"  >
+
+    <div class="card  bg-primary" style="height:13vh;">
+
+      <p style="text-align:center;color:white;font-size:5vh;float:left;"><img src="assets/courses.svg" style="width:7vh;float:left;"></img>Available Courses</p>
+    </div>
+  <div class=course-item style="margin-bottom:1vh;">
+   <div class="bg-light" id="course1" style="padding:2vw;font-size:150%;text-align:center;"><img src="assets/course-black.svg" style="width:5vh;float:left;margin-rignt:2vw;"></img> Chemistry advanced level</div>
+  </div>
+  <div class="bg-light course-item" style="padding:2vw;font-size:150%;text-align:center;margin-bottom:1vh;"><img src="assets/course-black.svg" style="width:5vh;float:left;margin-rignt:2vw;"></img> Combined Mathematics advanced level</div>
+  <div class="bg-light course-item" style="padding:2vw;font-size:150%;text-align:center;margin-bottom:1vh;"><img src="assets/course-black.svg" style="width:5vh;float:left;margin-rignt:2vw;"></img>Biology advanced level</div>
+  <div class="bg-light course-item" style="padding:2vw;font-size:150%;text-align:center;margin-bottom:1vh;"><img src="assets/course-black.svg" style="width:5vh;float:left;margin-rignt:2vw;"></img>Accounting advanced level</div>
+  <div class="bg-light course-item" style="padding:2vw;font-size:150%;text-align:center;margin-bottom:1vh;"><img src="assets/course-black.svg" style="width:5vh;float:left;margin-rignt:2vw;"></img>Business Studies advanced level</div>
+  <div class="bg-light course-item" style="padding:2vw;font-size:150%;text-align:center;margin-bottom:1vh;"><img src="assets/course-black.svg" style="width:5vh;float:left;margin-rignt:2vw;"></img>Information Technology advanced level</div>
+
+  </div>
+ </div>
+
+  <div class="col-md-4" style="margin-left:1%;">
+  <div classs="row">
+  <div class="col-md-12">
+  <div class="card"  >
+    <div class="card  bg-dark" style="height:7vh;padding-left:8px;padding-top:4px;"  >
+
+      <p style="text-align:center;color:white;font-size:3vh;float:left;"><img src="assets/open-book.svg" style="width:5vh;float:left;"></img>Description</p>
+  </div>
+  The institute is loacted near kaluthara police station and over 3000 students currecntly have
+    registered at the institute.
+  </div>
+ </div>
+</div>
+ <div class="row">
+   <div class="col-md-12" style="margin-top:3vh;">
+  <div class="card" id="map" style="background-color:yellow;height:60vh;"></div>
+  <script>
+    function myMap() {
+      var mapOptions = {
+        center: new google.maps.LatLng(51.5, -0.12),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+      }
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
