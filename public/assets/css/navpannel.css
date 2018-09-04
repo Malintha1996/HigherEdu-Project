@@ -1,0 +1,14 @@
+
+li{
+  text-decoration: none;
+  color:grey;
+}
+ul{
+  list-style: none;
+}
+.navbar-nav li:hover{
+ background-color: #48D1CC;
+}
+.navbar-nav li{
+   width:30%;
+}

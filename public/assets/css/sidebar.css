@@ -1,0 +1,140 @@
+/* styling of sidebar*/
+#sidebar-wrapper{
+  z-index:1;
+  position:absolute;
+  width:5%;
+  height:100%;
+  overflow-y: hidden;
+  background: #262424;
+  padding-top:20px;
+  overflow-x: hidden;
+
+}
+/*main content */
+#page-content-wrapper{
+  width:90%;
+  position:absolute;
+  margin-left:5%;
+}
+
+/* change the width of the sidebar to display it */
+#wrapper.menuDisplayed #sidebar-wrapper{
+    width:20%;
+    height:100%;
+}
+#wrapper.menuDisplayed #page-content-wrapper{
+    width:80%;
+    height:100%;
+    margin-left: 20%;
+}
+#wrapper.menuDisplayed .listname{
+  display: inline;
+  float:left;
+  margin-left:1vw;
+  font-family: verdana;
+  font-size: 150%;
+}
+#profile-image{
+  width:50;
+}
+#profile-name{
+  display:none;
+}
+#wrapper.menuDisplayed #profile-name{
+   display:inline;
+}
+#wrapper.menuDisplayed #profile-image{
+    width:80;
+}
+#wrapper.menuDisplayed #buttondiv{
+    padding-left:80%;
+}
+#menu-toggle2{
+  display:none;
+}
+.listname{
+  display: none;
+}
+.sidebar-nav {
+  list-style: none;
+}
+.sidebar-nav li a{
+  display:block;
+  text-decoraion:none;
+  color:#ddd;
+  margin-bottom:2vh;
+}
+.sidebar-nav li{
+   margin:0 2vh;
+}
+.sidebar-nav li a:hover{
+  background-color: #16A085;
+  text-decoration: none;
+}
+#menu-toggle {
+  border: none;
+  background-color: #262424;
+  border-color: none;
+  border-style:none;
+}
+ul{
+  list-style:none;
+  padding-left: 1vw;
+}
+div[name="siderow"]{
+   padding-top: 7px;
+   margin-bottom: 7px;
+}
+div[name="siderow"]:hover{
+  background-color:#48D1CC;
+}
+#search{
+  margin-left: 30vw;
+}
+#wrapper.menuDisplayed .navbar-nav li{
+  width:100%;
+}
+@media screen and (max-width:768px) {
+
+  #sidebar-wrapper{
+    display:none;
+
+  }
+  #wrapper{
+    margin-top:6vh;
+  }
+
+  #page-content-wrapper{
+    width:100%;
+    margin-left:0px;
+  }
+  #menu-toggle2{
+    display:block;
+  }
+  #wrapper.menuDisplayed #sidebar-wrapper{
+      display:block;
+      width:30%;
+      height:100%;
+      position:fixed;
+  }
+  #wrapper.menuDisplayed #page-content-wrapper{
+      width:80%;
+      height:100%;
+      margin-left: 30%;
+  }
+  #wrapper.menuDisplayed .listname{
+     display: none;
+  }
+  #menu-toggle{
+    display:none;
+  }
+  #profdiv{
+    display:none;
+  }
+  .sidebar-nav li{
+     margin-left:10vw;
+  }
+  #wrapper.menuDisplayed #profile-image{
+      width:50;
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+   <link   rel="stylesheet" href="assets/courses.css" >
+  <style>
+   /* Make the image fully responsive */
+   .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    }
+    .course-item:hover{
+      background-color:yellow;
+    }
+  </style>
+
+</head>
+<title>Course</title>
+</body>
+<% include partials/navpannel.ejs %>
+<div class="row" style="margin-top:15vh;margin-left:4vw;">
+  <div class="col-md-3" >
+    <div class="card">
+       <img class="card-img-top" style="height:40vh;" src="assets/Prasanna-Baddewithana.jpg" alt="card image">
+       <div class="card-body">
+         <h4 class="card-title" style="font-size:130%;">
+           Chemistry for Advanced Level<br>
+           By Prasanna Baddewithana</h4>
+       </div>
+    </div>
+  </div>
+  <div class="col-md-3" style="margin-left:5vw;">
+    <div class="card"  >
+       <img class="card-img-top" style="height:40vh;" style="height:30vh;" src="assets/anushka.jpg" alt="card image">
+       <div class="card-body">
+         <h4 class="card-title" style="font-size:130%;">
+           Chemistry for Advanced Level<br>
+           By Anushka Indunil</h4>
+       </div>
+    </div>
+  </div>
+  <div class="col-md-3" style="margin-left:5vw;" >
+    <div class="card">
+       <img class="card-img-top" style="height:40vh;" src="assets/channa-disanayake.jpg" alt="card image">
+       <div class="card-body">
+         <h4 class="card-title" style="font-size:130%;">
+           Chemistry for Advanced Level<br>
+           By Channa Disanayake</h4>
+       </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

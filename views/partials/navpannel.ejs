@@ -1,7 +1,9 @@
 
 <!-- navigation bar !-->
-<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" style="margin-bottom:3vh;">
-  <a class="navbar-brand" href="#">HighEdu</a>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" >
+
+  <a class="navbar-brand" href="#">HigherEdu</a>
+
 
   <!--toggle button!-->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -9,35 +11,32 @@
   </button>
   <!--nav menu!-->
   <div class="collapse navbar-collapse"  id="collapsibleNavbar">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav" style="width:70%">
       <li class="nav-item"  >
 
-        <a class="nav-link" href="#"><img src="assets/Home.svg" style="width:2vw;" alt="home icon">Home</a>
+        <a class="nav-link" href="/index"><span><img src="assets/Home.svg" class="image-responsive" style="width:30;float:left;" alt="home icon"></span><p style="margin-left:3px;font-size:110%;float:left;">Home</p></a>
 
       </li>
       <li class="nav-item" >
 
-        <a class="nav-link"  href="#"><img src="assets/courses.svg" style="width:2vw;" alt="home icon"> Courses</a>
+        <a class="nav-link"  href="/courses"><span><img src="assets/courses.svg" class="image-responsive" style="width:30;float:left;" alt="home icon"></span><p style="margin-left:3px;font-size:110%;flaot:left;">Courses</p></a>
 
       </li>
       <li class="nav-item" >
 
-        <a class="nav-link"  href="#"><img src="assets/phone-book.svg" style="width:2vw;" alt="contact icon">Contact</a>
+        <a class="nav-link"  href="/contact"><span><img src="assets/phone-book.svg" class="image-responsive" style="width:30;float:left;" alt="contact icon"></span><p style="margin-left:3px;font-size:110%;float:left;">Contact</p></a>
 
       </li>
       <li class="nav-item" >
 
-        <a class="nav-link"  href="#"><img src="assets/about-us.svg" style="width:2vw;" alt="home icon"> About-us</a>
-
+        <a class="nav-link"  href="/about"><span><img src="assets/about-us.svg" class="image-responsive" style="width:30;float:left;" alt="home icon"></span><p style="margin-left:3px;font-size:110%;float:left;">About-us</p></a>
       </li>
-    </ul>
-    <ul  class="navbar-nav" style="margin-left:40vw;">
-      <li class="nav-item" >
-        <form class="form-inline" action="/action_page.php">
-         <input class="form-control mr-sm-2" type="text" placeholder="Search">
-         <button class="btn btn-success" type="submit">Search<img src="assets/magnifier-tool.svg" alt="search icon" style="width:3vw;padding-left:1vw;"></button>
-       </form>
-      </li>
-    </ul>
+  </ul>
+  <div id="search" style="width:50%" >
+     <form class="form-inline" action="/action_page.php">
+       <input class="form-control mr-sm-2" type="text" placeholder="Search" style="float:left;"  required>
+       <button class="btn btn-success" type="submit" style="float:left;"><img class="image-responsive" src="assets/magnifier-tool.svg" alt="search icon" style="width:37;padding-left:1vw;"></button>
+   </form>
+  </div>
   </div>
 </nav>
