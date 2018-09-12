@@ -10,12 +10,8 @@
   <link href="assets/css/sidebar.css" rel="stylesheet" type="text/css">
   <script src="assets/js/sidebar.js" type="text/javascript"></script>
   <link href="assets/css/navpannel.css" rel="stylesheet" type="text/css">
-    <style>
-        body {
-            background-color: #E6E6FA;
+  <link href="assets/css/institute_account.css" rel="stylesheet" type="text/css">
 
-          }
-   </style>
 </head>
 <body>
     <%include partials/navpannel.ejs %>
@@ -34,7 +30,7 @@
             <li ><p id="profile-name" style="font-family:san-serif;font-size:160%;color:white;">Sakya Higher Educational Institute</p></li>
           </div>
             <div name="siderow" class="row">
-             <li><a href="#"><img src="assets/icons/courses.svg" class="image-responsive" style="width:30;float:left;"><p class="listname"  >COURSES</p></a></li>
+             <li><a href="/addCourse"><img src="assets/icons/courses.svg" class="image-responsive" style="width:30;float:left;"><p class="listname">Add Course</p></a></li>
            </div>
            <div name="siderow" class="row">
             <li><a href="#"><img src="assets/icons/settings.svg" class="image-responsive" style="width:30;float:left;"><p class="listname" >SETTINGS</p></a></li>
@@ -45,13 +41,14 @@
         </ul>
      </div>
      <div id="page-content-wrapper" style="float:left;height:100%;">
-       <div class="container-fluid">
+       <div class="container-fluid" id="banner1">
+
            <div class="col-lg-12">
              <div  class="row" id="buttondiv" style="margin-bottom:6px;">
               <button id="menu-toggle2"  type="button" style="float:left;"><img src="assets/icons/slider.svg" class="image-responsive" style="width:30;"></button>
              </div>
-              <div class="row">
-                <div class="col-md-5" style="margin-left:2vw;margin-right:4vw;margin-top:4vw;">
+                <div class="row">
+                <div class="col-md-4" style="margin-left:2vw;margin-right:4vw;margin-top:4vw;">
                    <div class="card" style="">
                        <img class="card-img-top" src="assets/images/sakya/profile.jpg" alt="card image">
                        <div class="card-body">
@@ -60,13 +57,35 @@
                        </div>
                    </div>
                  </div>
+               </div>
+              <div class="row" style="margin-top:14vh;">
+                <div class="col-md-6">
+                    <% include partials/newsbox.ejs  %>
+                </div>
+                <div class="col-md-6" style="float:left">
+                 <div class="card"  >
 
-           </div>
+                 <div class="card  bg-primary" >
+
+                   <p style="text-align:center;color:white;font-size:5vh;float:left;"><img src="assets/courses.svg" style="width:7vh;float:left;"></img>Available Courses</p>
+                 </div>
+                     <% for(var i=0; i< courses.length; i++){ %>
+                     <a class="bg-light btn btn-light course-item" href="/courseView" style="padding:2vw;font-size:20;text-align:center;margin-bottom:1vh;"><img src="assets/course-black.svg" style="width:5vh;float:left;margin-rignt:2vw;"></img><%=courses[i].item %></a>
+
+                     <% } %>
+
+               </div>
+              </div>
+              </div>
+             </div>
          </div>
-       </div>
     </div>
-    <script >
+    <div class="container-fluid" id="banner2" style="height:100vh;">
+    <div class="row">
+
     </div>
+    </div>
+  </div>
 
 </body>
 </html>

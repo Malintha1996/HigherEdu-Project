@@ -7,7 +7,7 @@ ul{
   list-style: none;
 }
 .navbar-nav li:hover{
- background-color: #48D1CC;
+ background-color: #00FF00;
 }
 .navbar-nav li{
    width:30%;

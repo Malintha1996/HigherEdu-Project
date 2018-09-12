@@ -1,0 +1,9 @@
+#form{
+  display:none;
+}
+#form.Displayed {
+  display:inline;
+}
+#form.Displayed #addcourse{
+  display:none;
+}
