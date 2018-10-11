@@ -1,9 +1,12 @@
-#form{
+
+#banner1{
+  background-image: url("../images/background/settings.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.stream{
   display:none;
 }
-#form.Displayed {
-  display:inline;
-}
-#form.Displayed #addcourse{
-  display:none;
+.showstream{
+  display: block;
 }

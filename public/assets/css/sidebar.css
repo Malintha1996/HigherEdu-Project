@@ -138,3 +138,21 @@ div[name="siderow"]:hover{
       width:50;
   }
 }
+#banner3{
+  background-image: url("../images/background/vector3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+div.transbox{
+  background-color: #ffffff;
+  opacity:0.6;
+  filter:alpha(opacity=60);
+}
+div.transbox h1{
+  opacity:1;
+  color: black;
+}
+#featuredphoto{
+  width:100%;
+  height:100%;
+}

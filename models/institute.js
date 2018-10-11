@@ -4,12 +4,17 @@ const Schema=mongoose.Schema;
 //create Schema and model
 
 const CourseSchema=new Schema({
-    name:String,
+    cname:String,
+    cid:String,
     teacher:String,
-    type:String
+    context:String,
+    stream:String,
+    type:String,
+    featuredPhoto:String
 });
 const InstituteSchema=new Schema({
     name:String,
+    iid:String,
     description:String,
     courses:[CourseSchema]
 
